@@ -59,7 +59,7 @@ G_DEFINE_TYPE (KmsAgnosticBin2, kms_agnostic_bin2, GST_TYPE_BIN);
 #define OLD_CHAIN_KEY "kms-old-chain-key"
 #define CONFIGURED_KEY "kms-configured-key"
 
-#define TARGET_BITRATE_DEFAULT 300000
+#define TARGET_BITRATE_DEFAULT 100000000
 
 struct _KmsAgnosticBin2Private
 {
