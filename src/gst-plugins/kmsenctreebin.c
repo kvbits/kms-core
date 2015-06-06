@@ -54,7 +54,8 @@ configure_encoder (GstElement * encoder, const gchar * factory_name,
   } else if (g_strcmp0 ("x264enc", factory_name) == 0) {
     g_object_set (G_OBJECT (encoder), "speed-preset", 1 /* ultrafast */ ,
         "tune", 4 /* zerolatency */ , "threads", (guint) 1, "bitrate",
-        target_bitrate / 1000, NULL);
+        target_bitrate / 1000, "quantizer", 0, "qp-step", 0, "qp-min", 0,
+        "qp-max", 0, "key-int-max", 10, NULL);
   }
 }
 
